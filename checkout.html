@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo-link">
+            <h2>ModernShop</h2>
+        </a>
+        <div><a href="index.html">Home</a> <a href="products.html">Shop</a> <a href="cart.html">Cart (<span
+                    id="cart-count">0</span>)</a></div>
+    </nav>
+    <main class="container">
+        <form id="checkout-form"
+            style="max-width: 500px; margin: 0 auto; background: white; padding: 2rem; border-radius: 8px;">
+            <h2>Shipping Details</h2>
+            <input type="text" placeholder="Full Name" required class="w-full my-1 p-1">
+            <input type="email" placeholder="Email" required class="w-full my-1 p-1">
+            <input type="text" placeholder="Address" required class="w-full my-1 p-1">
+            <button type="submit" class="btn lg">Place Order</button>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

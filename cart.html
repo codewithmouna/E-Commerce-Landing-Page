@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Your Cart</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo-link">
+            <h2>ModernShop</h2>
+        </a>
+        <div><a href="index.html">Home</a> <a href="products.html">Shop</a> <a href="cart.html">Cart (<span
+                    id="cart-count">0</span>)</a></div>
+    </nav>
+    <main class="container">
+        <h1>Shopping Cart</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+        </table>
+        <div style="text-align: right;">
+            <div style="margin-bottom: 1rem;">
+                <input type="text" id="coupon-code" placeholder="Coupon Code (SAVE10)" style="padding: 0.5rem;">
+                <button class="btn outline" onclick="applyCoupon()">Apply</button>
+            </div>
+            <h3>Total: <span id="cart-total">$0.00</span></h3>
+            <a href="checkout.html" class="btn">Proceed to Checkout</a>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
